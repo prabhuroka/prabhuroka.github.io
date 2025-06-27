@@ -1,0 +1,87 @@
+/* Custom styles to complement Bootstrap */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 8rem 0 4rem;
+    background-color: var(--secondary-color);
+    background-image: url('/images/background.jpg');
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Section padding with offset for fixed navbar */
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Profile image */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Social links */
+.social-links .btn {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+}
+
+/* Form styling */
+.contact-form .form-control {
+    padding: 0.75rem 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 6rem 0 3rem;
+    }
+    
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* Contact Section Styling */
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.social-links .btn i {
+    font-size: 1.2rem;
+}
