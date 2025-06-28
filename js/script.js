@@ -7,6 +7,25 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 
+// YouTube Modal Handler
+document.querySelectorAll('.watch-demo').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const videoId = this.getAttribute('data-video-id');
+      const iframe = document.getElementById('youtubeFrame');
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+      
+      // Show the modal
+      const modal = new bootstrap.Modal(document.getElementById('youtubeModal'));
+      modal.show();
+    });
+  });
+  
+  // Reset video when modal closes
+  document.getElementById('youtubeModal').addEventListener('hidden.bs.modal', function () {
+    document.getElementById('youtubeFrame').src = '';
+  });
+
 // Smooth scroll offset for fixed navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

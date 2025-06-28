@@ -85,3 +85,26 @@ html {
 .social-links .btn i {
     font-size: 1.2rem;
 }
+
+/* Modal styling */
+#youtubeModal .modal-content {
+    border: none;
+    background: transparent;
+  }
+  
+  #youtubeModal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  #youtubeModal .btn-close {
+    filter: invert(1);
+  }
+  
+  .watch-demo {
+    transition: all 0.3s;
+  }
+  
+  .watch-demo:hover {
+    transform: scale(1.05);
+  }
