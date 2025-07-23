@@ -9,26 +9,32 @@
 html {
     scroll-behavior: smooth;
 }
-
-/* Hero Section */
-.hero-section {
-    padding: 8rem 0 4rem;
-    background-color: var(--secondary-color);
-    background-image: url('/images/background.jpg');
-    color: white;
-    margin-bottom: 2rem;
-}
-
 /* Section padding with offset for fixed navbar */
 .section {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
+/* Hero Section */
+.hero-section {
+    padding: 8rem 0 4rem;
+    background-color: var(--secondary-color);
+    background-image: url('/images/background3.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
 /* Profile image */
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border: 5px solid var(--primary-color);
 }
