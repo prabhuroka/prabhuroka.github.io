@@ -19,11 +19,11 @@ html {
 .hero-section {
     padding: 8rem 0 4rem;
     background-color: var(--secondary-color);
-    background-image: url('/images/background2.jpg');
+    background-image: url('/images/background.jpg');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
-    color: 	#0d6efd;
+    color: 	white;
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
